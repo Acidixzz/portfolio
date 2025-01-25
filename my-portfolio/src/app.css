@@ -63,7 +63,7 @@ body {
   font-size: 100px;
   line-height: 90px;
   font-weight: 700;
-  text-shadow: 0 0 10px var(--skyblue-transparent);
+  /* text-shadow: 0 0 0px var(--skyblue-transparent); */
   white-space: nowrap;
 }
 

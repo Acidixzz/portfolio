@@ -93,32 +93,20 @@ body {
   height: 30em;
   width: 100em;
   transform: perspective(10em) rotateX(40deg) scale(2);
-  animation: pulse-grid-1 3s infinite ease-in-out, pulse-grid-2 4s infinite ease-in-out;
+  animation: pulse-grid 6s infinite ease-in-out;
 }
 
 @keyframes pulse-grid {
 
   0%,
-  100% {
-    filter: brightness(1);
-  }
-
-  50% {
-    filter: brightness(0.4);
-  }
-}
-
-@keyframes pulse-grid-2 {
-
-  0%,
   50%,
   100% {
-    filter: brightness(1);
+    filter: brightness(1.1);
   }
 
   25%,
   75% {
-    filter: brightness(0.7);
+    filter: brightness(0.6);
   }
 }
 

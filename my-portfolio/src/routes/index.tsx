@@ -1,5 +1,6 @@
 import { A } from "@solidjs/router";
-import NameDisplay from "~/components/index-visuals/NameDisplay";
+import NameDisplay from "~/components/NameDisplay/NameDisplay";
+import TextBox from "~/components/TextBox/TextBox";
 
 export default function Home() {
 
@@ -7,7 +8,13 @@ export default function Home() {
     <main class="text-center mx-auto text-gray-700 main-size">
       <NameDisplay />
 
-      <div class="mx-auto flex items-center justify-center text-center tile-container"></div>
+      <div class="mx-auto flex flex-col items-center text-center tile-container">
+        <TextBox />
+        <div class="spacer" />
+        <TextBox />
+        <div class="spacer" />
+        <TextBox />
+      </div>
     </main>
   );
 }

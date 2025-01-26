@@ -14,7 +14,6 @@ export default createHandler(() => (
         <body>
           <div id="app">{children}</div>
           {scripts}
-          <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
         </body>
       </html>
     )}

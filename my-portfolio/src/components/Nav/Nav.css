@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    background: var(--background);
+    border-color: var(--skyblue-transparent);
+    border-bottom-width: 1px;
+    max-height: 5vh;
+}
+
+.nav-link {
+    color: #fff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link-active {
+    color: var(--skyblue);
+    font-weight: 600;
+    text-shadow: 0 0 10px var(--skyblue-transparent);
+}
+
+.nav-link:hover {
+    color: var(--skyblue);
+}

@@ -1,6 +1,19 @@
+import { createSignal, onMount } from "solid-js";
 import Tilt from "../Tilt";
+import "./NameDisplay.css";
 
 export default function NameDisplay() {
+
+    // const [isMobile, setIsMobile] = createSignal();
+
+    // onMount(() => {
+    //     setIsMobile(window.innerWidth <= 750);
+
+    //     window.addEventListener("resize", () => {
+    //         setIsMobile(window.innerWidth <= 750);
+    //     });
+    // });
+
     return (
         <div>
             <Tilt

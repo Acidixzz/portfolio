@@ -13,6 +13,7 @@
 body {
   background: var(--background);
   color: var(--foreground-rgb);
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -43,12 +44,11 @@ body {
 
 /* Home */
 .main-size {
-  max-height: 100vh;
   margin-top: 20vh;
 }
 
 .tilt-size {
-  max-width: 32rem;
+  max-width: 20rem;
 }
 
 .name-text {
@@ -136,13 +136,21 @@ body {
   z-index: 1;
 }
 
+.tile-container {
+  height: 100vh;
+}
+
 @media (max-width: 750px) {
+  .main-size {
+    margin-top: 20vh;
+  }
+
   .name-text {
     font-size: 40px;
   }
 
   .graph-container {
-    height: 30vh;
+    height: 40vh;
   }
 
   .graph {
@@ -154,10 +162,10 @@ body {
 
   .blur-overlay {
     position: absolute;
-    top: 30vh;
+    top: 40vh;
     left: 0%;
     width: 100vw;
-    height: 50vh;
+    height: 55vh;
     pointer-events: none;
     background: radial-gradient(circle at top,
         rgba(0, 0, 0, 0) 30%,
@@ -166,7 +174,7 @@ body {
   }
 
   .blur-line {
-    height: 10vh;
+    height: 15vh;
   }
 }
 

@@ -1,7 +1,11 @@
 import "./TextBox.css";
-import { onMount } from "solid-js";
+import { onMount, ParentProps } from "solid-js";
 
-export default function TextBox() {
+interface TextBoxProps {
+    isButton?: boolean;
+}
+
+export default function TextBox(props: TextBoxProps & ParentProps) {
 
     onMount(() => {
         const elements = document.querySelectorAll(".text-box");
@@ -24,15 +28,22 @@ export default function TextBox() {
                     }
                 });
             },
-            { threshold: 0.1 }
+            { threshold: 0.25 }
         );
 
         elements.forEach((el) => observer.observe(el));
     });
 
-    return (
-        <div class="text-box border-glow opacity-0 animate-none">
-
-        </div>
-    )
+    return props.isButton ?
+        (
+            <button class="text-box border-glow opacity-0 animate-none">
+                {props.children}
+            </button>
+        )
+        :
+        (
+            <div class="text-box border opacity-0 animate-none">
+                {props.children}
+            </div>
+        )
 }

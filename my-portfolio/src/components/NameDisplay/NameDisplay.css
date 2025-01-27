@@ -52,7 +52,7 @@
     height: 30em;
     width: 100em;
     transform: perspective(10em) rotateX(40deg) scale(2);
-    animation: pulse-grid 6s infinite ease-in-out;
+    animation: pulse-grid 10s infinite ease-in-out;
 }
 
 @keyframes pulse-grid {
@@ -65,7 +65,7 @@
 
     25%,
     75% {
-        filter: brightness(0.6);
+        filter: brightness(0.5);
     }
 }
 

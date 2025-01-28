@@ -1,6 +1,7 @@
 import { createSignal, onMount } from "solid-js";
 import Tilt from "../Tilt";
 import "./NameDisplay.css";
+import "./sun.css";
 
 export default function NameDisplay() {
 
@@ -16,6 +17,7 @@ export default function NameDisplay() {
 
     return (
         <div>
+            {/* <div class="sun"/> */}
             {isMobile() ?
                 (
                     <h1 class="uppercase name-text">Owen Wilson</h1>

@@ -11,8 +11,8 @@ export default function Nav() {
   const isNotHome = () => location.pathname !== "/" ? "nav-in" : "nav-out";
 
   return (
-    <nav class={isNotHome()}>
-      <ul class="container flex items-center m-3 text-gray-200">
+    <nav class={`${isNotHome()} items-center`}>
+      <ul class="flex items-center text-gray-200">
         <li class={`${active("/")} mx-1.5 sm:mx-6`}>
           <a href="/">Home</a>
         </li>

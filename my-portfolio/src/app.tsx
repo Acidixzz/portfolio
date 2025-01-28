@@ -1,4 +1,4 @@
-import { Router } from "@solidjs/router";
+import { Router, useLocation } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { onMount, Suspense } from "solid-js";
 import Nav from "~/components/Nav/Nav";
@@ -10,6 +10,7 @@ export default function App() {
     <Router
       root={props => (
         <>
+          <Nav/>
           <Suspense>{props.children}</Suspense>
         </>
       )}

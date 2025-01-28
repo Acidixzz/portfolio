@@ -7,6 +7,17 @@ nav {
     border-color: var(--skyblue-transparent);
     border-bottom-width: 1px;
     max-height: 5vh;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nav-in {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.nav-out {
+    transform: translateY(-50px);
+    opacity: 0;
 }
 
 .nav-link {

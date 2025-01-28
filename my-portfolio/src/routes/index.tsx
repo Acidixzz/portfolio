@@ -22,7 +22,7 @@ export default function Home() {
         </TextBox>
         <div class="spacer" />
 
-        <TextBox isButton>
+        <TextBox route="/education">
           <h1 class="uppercase header-text">
             Education
           </h1>
@@ -30,7 +30,7 @@ export default function Home() {
 
         <div class="spacer" />
 
-        <TextBox isButton>
+        <TextBox route="/experience">
           <h1 class="uppercase header-text">
             Experience
           </h1>
@@ -38,7 +38,7 @@ export default function Home() {
 
         <div class="spacer" />
 
-        <TextBox isButton>
+        <TextBox route="/projects">
           <h1 class="uppercase header-text">
             Projects
           </h1>

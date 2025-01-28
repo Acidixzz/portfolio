@@ -1,5 +1,6 @@
 import { useLocation } from "@solidjs/router";
 import "./Nav.css";
+import { createEffect, Show } from "solid-js";
 
 export default function Nav() {
   const location = useLocation();
@@ -7,14 +8,19 @@ export default function Nav() {
   const active = (path: string) =>
     path == location.pathname ? "nav-link-active" : "nav-link";
 
+  const isNotHome = () => location.pathname !== "/" ? "nav-in" : "nav-out";
+
   return (
-    <nav>
+    <nav class={isNotHome()}>
       <ul class="container flex items-center m-3 text-gray-200">
         <li class={`${active("/")} mx-1.5 sm:mx-6`}>
           <a href="/">Home</a>
         </li>
-        <li class={`${active("/projects")} mx-1.5 sm:mx-6`}>
-          <a href="/projects">Projects</a>
+        <li class={`${active("/education")} mx-1.5 sm:mx-6`}>
+          <a href="/education">Education</a>
+        </li>
+        <li class={`${active("/experience")} mx-1.5 sm:mx-6`}>
+          <a href="/experience">Experience</a>
         </li>
         <li class={`${active("/projects")} mx-1.5 sm:mx-6`}>
           <a href="/projects">Projects</a>

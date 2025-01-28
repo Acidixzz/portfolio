@@ -2,7 +2,7 @@ import "./TextBox.css";
 import { onMount, ParentProps } from "solid-js";
 
 interface TextBoxProps {
-    isButton?: boolean;
+    route?: string;
 }
 
 export default function TextBox(props: TextBoxProps & ParentProps) {
@@ -34,11 +34,11 @@ export default function TextBox(props: TextBoxProps & ParentProps) {
         elements.forEach((el) => observer.observe(el));
     });
 
-    return props.isButton ?
+    return !!props.route ?
         (
-            <button class="text-box border-glow opacity-0 animate-none">
+            <a href={props.route} class="text-box border-glow opacity-0 animate-none">
                 {props.children}
-            </button>
+            </a>
         )
         :
         (

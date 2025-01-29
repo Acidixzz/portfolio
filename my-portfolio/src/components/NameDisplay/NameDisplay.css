@@ -8,6 +8,8 @@
 
 .tilt-size {
     max-width: 20rem;
+    position: relative;
+    z-index: 3;
 }
 
 .name-text {
@@ -98,7 +100,7 @@
 @media (max-width: 750px) {
 
     .name-text {
-        font-size: 40px;
+        font-size: 10vw;
     }
 
     .graph-container {

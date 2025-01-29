@@ -17,7 +17,7 @@ export default function NameDisplay() {
 
     return (
         <div>
-            {/* <div class="sun"/> */}
+            <div class="sun" />
             {isMobile() ?
                 (
                     <h1 class="uppercase name-text">Owen Wilson</h1>

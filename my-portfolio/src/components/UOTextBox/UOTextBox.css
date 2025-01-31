@@ -2,35 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.uo-plain {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: var(--container-background);
+    border-radius: 0.5rem;
+}
+
 .uo-text-box {
+    position: relative;
+    z-index: 1;
     width: 600px;
-    /* height: 50em; */
-    background-color: var(--container-background);
+    height: 50vh;
+    background: var(--container-background);
+    border-radius: 0.5rem;
 }
 
-.uo-border-glow {
-    border-radius: 15px;
-    border: 2px solid var(--uo-green);
-    box-shadow:
-        0 0 10px var(--uo-green);
+.uo-text-box::before,
+.uo-text-box::after {
+    content: "";
+    position: absolute;
+    inset: -0.25rem;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),
+            var(--uo-green),
+            var(--uo-yellow),
+            var(--uo-yellow),
+            var(--uo-green));
+    border-radius: 0.6rem;
+    animation: gradient-rotation 15s linear infinite;
 }
 
-.header-text {
-    font-weight: 600;
-    font-size: 3em;
-    color: white;
-    padding: 30px;
-    transition: color 0.5s ease;
+.uo-text-box::after {
+    filter: blur(0.75rem);
+    opacity: 0.5;
 }
 
-@media (max-width: 750px) {
-    .uo-text-box {
-        width: 90%;
+
+@media (max-width: 750px) {}
+
+@keyframes gradient-rotation {
+    0% {
+        --gradient-angle: 0deg;
     }
 
-    .header-text {
-        font-size: 30px;
+    100% {
+        --gradient-angle: 360deg;
     }
-
-
 }

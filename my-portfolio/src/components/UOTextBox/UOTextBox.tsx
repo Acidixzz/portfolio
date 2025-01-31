@@ -35,8 +35,10 @@ export default function TextBox(props: TextBoxProps & ParentProps) {
     });
 
     return (
-            <div class="uo-text-box uo-border-glow opacity-0 animate-none">
+        <div class="relative uo-text-box opacity-0 animate-none">
+            <div class="uo-plain">
                 {props.children}
             </div>
-        )
+        </div>
+    )
 }

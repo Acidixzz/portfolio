@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .text-box {
-    width: 35%;
+    width: 600px;
     /* height: 50em; */
     background-color: var(--container-background);
 }
@@ -30,7 +30,7 @@
 
 .header-text {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3em;
     color: white;
     padding: 30px;
     transition: color 0.5s ease;

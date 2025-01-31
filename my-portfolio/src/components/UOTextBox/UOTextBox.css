@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.uo-text-box {
+    width: 600px;
+    /* height: 50em; */
+    background-color: var(--container-background);
+}
+
+.uo-border-glow {
+    border-radius: 15px;
+    border: 2px solid var(--uo-green);
+    box-shadow:
+        0 0 10px var(--uo-green);
+}
+
+.header-text {
+    font-weight: 600;
+    font-size: 3em;
+    color: white;
+    padding: 30px;
+    transition: color 0.5s ease;
+}
+
+@media (max-width: 750px) {
+    .uo-text-box {
+        width: 90%;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+
+}

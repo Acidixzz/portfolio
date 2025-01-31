@@ -4,6 +4,7 @@
 
 nav {
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
     background: var(--background);
@@ -53,7 +54,7 @@ ul {
         0 0 20px var(--skyblue),
         0 0 40px var(--skyblue),
         0 0 80px var(--skyblue); */
-}   
+}
 
 .nav-link-uo {
     color: #fff;

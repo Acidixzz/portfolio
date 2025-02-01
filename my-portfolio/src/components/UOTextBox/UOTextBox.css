@@ -9,13 +9,13 @@
 }
 
 .education-main {
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
 }
 
 .uo-plain {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: var(--container-background);
     border-radius: 0.5rem;
 }
@@ -23,7 +23,6 @@
 .uo-text-box {
     position: relative;
     width: 600px;
-    height: 50vh;
     background: var(--container-background);
     border-radius: 0.5rem;
 }

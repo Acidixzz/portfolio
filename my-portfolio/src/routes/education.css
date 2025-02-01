@@ -30,10 +30,10 @@
             var(--uo-yellow),
             var(--uo-green));
     filter: blur(3.5rem);
-    opacity: 0.5;
+    opacity: 0.25;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 5px transparent;
+    -webkit-text-stroke: 8px transparent;
     animation: glowing-reverse 25s linear infinite;
     color: transparent;
 }
@@ -56,7 +56,7 @@
     opacity: .5;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 5px transparent;
+    -webkit-text-stroke: 8px transparent;
     animation: glowing-reverse 25s linear infinite;
     color: transparent;
 }
@@ -69,6 +69,17 @@
     100% {
         background-position: 0% 0;
     }
+}
+
+.image-uo {
+    background-image: url("/uo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 56.25%;
+    height: auto;
+    border-radius: .25rem;
 }
 
 @media (max-width: 750px) {

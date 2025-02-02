@@ -7,7 +7,7 @@ export default function Education() {
             <div class="mx-auto flex flex-col items-center text-center education-main">
                 <p class="university-text" style={"margin-bottom: 10vh;"} data-text="University of Oregon">University of Oregon</p>
                 <UOTextBox>
-                    <div style={"padding: 15px; padding-bottom: 0;"}>
+                    <div style={"padding: 30px; padding-bottom: 0;"}>
                     <div class="image-uo" style={"border-radius: 5px;"}></div>
                     </div>
                     <h1 style={"padding: 30px; color: white;"}>

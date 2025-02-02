@@ -7,15 +7,15 @@ export default function Education() {
             <div class="mx-auto flex flex-col items-center text-center education-main">
                 <p class="university-text" style={"margin-bottom: 10vh;"} data-text="University of Oregon">University of Oregon</p>
                 <UOTextBox>
-                    <div class="image-uo"></div>
-                </UOTextBox>
-
-                <div style={"height: 4rem"}/>
-                
-                <UOTextBox>
-                    <h1 style={"padding: 10px; color: white;"}>
-                        Talk about passion for school and why I chose here as 
-                        well as explain what I study and why.
+                    <div style={"padding: 15px; padding-bottom: 0;"}>
+                    <div class="image-uo" style={"border-radius: 5px;"}></div>
+                    </div>
+                    <h1 style={"padding: 30px; color: white;"}>
+                        It has always been a dream of mine to pursue an education here at the University of Oregon. 
+                        From watching their sports as a kid, to visiting family in Oregon every year, ther has always 
+                        been something special about the atmosphere in Oregon that called to me. As I grew older, 
+                        this dream never changed and became my reality. Graduating in June 2026, I currently major in 
+                        Computer Science, Data Science, and Spatial Data Science and Technologies.  
                     </h1>
                 </UOTextBox>
                

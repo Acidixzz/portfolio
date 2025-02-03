@@ -14,7 +14,6 @@
   --uo-yellow: #e3e81d;
 }
 
-
 body {
   background: var(--background);
   color: var(--foreground-rgb);
@@ -34,6 +33,20 @@ body {
 
 .spacer {
   height: 4rem;
+}
+
+.header-text {
+  font-weight: 600;
+  font-size: 3em;
+  color: white;
+  padding: 30px;
+  transition: color 0.5s ease;
+}
+
+@media (max-width: 750px) {
+  .header-text {
+    font-size: 30px;
+  }
 }
 
 

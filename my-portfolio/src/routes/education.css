@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .university-text {
     position: relative;
     font-size: 80px;
@@ -72,7 +76,7 @@
 }
 
 .image-uo {
-    background-image: url("/uo.jpg");
+    background-image: var(--bg-image);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

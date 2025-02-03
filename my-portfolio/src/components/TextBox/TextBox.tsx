@@ -38,7 +38,7 @@ export default function TextBox(props: TextBoxProps & ParentProps) {
 
     return (!!props.route || props.isButton) ?
         (
-            <a href={props.route} class="text-box border-glow opacity-0 animate-none" style={props.style}>
+            <a href={props.route} target={props.isButton ? '_blank' : undefined} class="text-box border-glow opacity-0 animate-none" style={props.style}>
                 {props.children}
             </a>
         )

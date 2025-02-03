@@ -9,8 +9,8 @@ nav {
     width: 100%;
     background: var(--background);
     border-color: var(--skyblue);
-    border-bottom-width: 2px;
-    box-shadow: 0 0 10px var(--skyblue);
+    border-bottom-width: 1px;
+    box-shadow: 0 0 5px var(--skyblue);
     height: 5vh;
     transition: opacity 0.25s ease, transform 0.5s ease;
     will-change: transform, opacity;

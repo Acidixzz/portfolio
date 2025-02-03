@@ -5,7 +5,7 @@
 footer {
     width: 100%;
     background: var(--background);
-    border-color: var(--skyblue-transparent);
+    border-color: var(--skyblue);
     border-top-width: 1px;
     box-shadow: 0 0 5px var(--skyblue);
     height: 15vh;

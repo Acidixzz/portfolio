@@ -8,8 +8,8 @@ nav {
     top: 0;
     width: 100%;
     background: var(--background);
-    border-color: var(--skyblue-transparent);
-    border-bottom-width: 1px;
+    border-color: var(--skyblue);
+    border-bottom-width: 2px;
     box-shadow: 0 0 10px var(--skyblue);
     height: 5vh;
     transition: opacity 0.25s ease, transform 0.5s ease;

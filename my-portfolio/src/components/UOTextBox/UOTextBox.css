@@ -8,11 +8,6 @@
     inherits: false;
 }
 
-.education-main {
-    margin-top: 10vh;
-    margin-bottom: 15vh;
-}
-
 .uo-plain {
     width: 100%;
     height: auto;
@@ -22,7 +17,7 @@
 
 .uo-text-box {
     position: relative;
-    width: 600px;
+    width: 700px;
     background: var(--container-background);
     border-radius: 0.5rem;
 }

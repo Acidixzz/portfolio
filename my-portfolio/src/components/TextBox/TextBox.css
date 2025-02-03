@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 .text-box {
-    width: 600px;
+    width: 700px;
     /* height: 50em; */
     background-color: var(--container-background);
+    overflow: hidden;
 }
 
 .border {
@@ -15,7 +16,7 @@
 
 .border-glow {
     border-radius: 15px;
-    border: 2px solid var(--skyblue);
+    border: 1px solid var(--skyblue);
     box-shadow: 0 0 0px 0px var(--skyblue-transparent);
     transition: box-shadow 0.5s ease, transform 0.5s ease;
     will-change: box-shadow;

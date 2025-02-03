@@ -8,7 +8,6 @@ export default function Home() {
   let contentRef: HTMLDivElement | undefined;
 
   const svgs = import.meta.glob("../../public/logos/*.svg", { eager: true });
-  console.log(svgs);
 
   const scrollToContent = () => {
     if (contentRef) {
@@ -24,19 +23,6 @@ export default function Home() {
       </div>
 
       <div ref={contentRef} class="mx-auto flex flex-col items-center text-center tile-container">
-        <div class="spacer" />
-        <TextBox>
-          <h1 class="uppercase header-text" style={"padding-bottom: 0"}>
-            About Me
-          </h1>
-          <div style={"border-width: 0.5px; margin-bottom: 10px; margin-top: 10px; border-color: var(--skyblue); margin-left: 35%; margin-right: 35%; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
-          <p style={"color: white; margin: 30px;"}>
-            I am Owen Wilson, a passionate software developer pursuing a B.S. in Computer Science, Data Science, and Spatial Data Science at the University of Oregon.
-            With experience as a Mobile Software Engineer at Edupoint and projects like Tune Vault, I specialize in React Native, TypeScript, Python, and C#.
-            I thrive on solving problems and creating efficient, user-focused applications.
-          </p>
-        </TextBox>
-
         <div class="spacer" />
 
         <TextBox>

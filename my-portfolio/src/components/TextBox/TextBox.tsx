@@ -1,8 +1,10 @@
 import "./TextBox.css";
-import { onMount, ParentProps } from "solid-js";
+import { JSX, onMount, ParentProps } from "solid-js";
 
 interface TextBoxProps {
+    isButton?: boolean;
     route?: string;
+    style?: JSX.CSSProperties;
 }
 
 export default function TextBox(props: TextBoxProps & ParentProps) {
@@ -34,15 +36,15 @@ export default function TextBox(props: TextBoxProps & ParentProps) {
         elements.forEach((el) => observer.observe(el));
     });
 
-    return !!props.route ?
+    return (!!props.route || props.isButton) ?
         (
-            <a href={props.route} class="text-box border-glow opacity-0 animate-none">
+            <a href={props.route} class="text-box border-glow opacity-0 animate-none" style={props.style}>
                 {props.children}
             </a>
         )
         :
         (
-            <div class="text-box border opacity-0 animate-none">
+            <div class="text-box border opacity-0 animate-none" style={props.style}>
                 {props.children}
             </div>
         )

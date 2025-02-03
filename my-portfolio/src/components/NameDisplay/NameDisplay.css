@@ -32,7 +32,7 @@
     position: relative;
     overflow: hidden;
     margin-top: 10vh;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
             var(--skyblue) 0%,
             var(--skyblue) 3px,
             rgba(0, 0, 0, 0) 0px);
-    background-size: 4em 2em, 4em 2em;
+    background-size: 3em 1.5em, 3em 1.5em;
     height: 30em;
     width: 100em;
     transform: perspective(10em) rotateX(40deg) scale(2);

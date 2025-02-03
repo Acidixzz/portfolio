@@ -27,8 +27,8 @@ export default function Footer() {
                     </a>
                 </li>
             </ul>
-            <div style={"height: 2em"} />
-            <p style={"color: grey; font-weight: 200; background-color: black"}>
+            <div style={"height: 1.5em"} />
+            <p style={"width: 100%; font-size: 12px; color: grey; font-weight: 200; background-color: black"}>
                 Icons by <a href="https://icons8.com" target="_blank" style={"text-decoration: underline"}>Icons8</a>
             </p>
         </footer>

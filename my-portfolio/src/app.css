@@ -12,6 +12,9 @@
   --skyblue-transparent: #17b6ff99;
   --uo-green: #1de840;
   --uo-yellow: #e3e81d;
+
+  --text-light: #d0d0d0;
+  --text-grey: #828282;
 }
 
 body {

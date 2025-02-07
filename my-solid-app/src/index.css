@@ -63,33 +63,77 @@ body {
 }
 
 
-@media (max-width: 750px) {
-  .header-text {
-    font-size: 30px;
-  }
-}
 
 
 /* animations */
 
-.bounce-in {
-  animation: bounceIn 0.7s ease forwards;
+.flicker-in {
+  animation: flickerIn 0.5s ease forwards;
   transform-origin: center;
 }
 
-@keyframes bounceIn {
+@keyframes flickerIn {
   0% {
-    transform: scale(0.5);
+    transform: translateY(-200px);
     opacity: 0;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  20% {
+    opacity: 0.25;
+  }
+
+  30% {
+    opacity: 0.5;
   }
 
   50% {
     transform: scale(1.1);
-    opacity: 1;
+    opacity: 0.25;
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
     opacity: 1;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+  .header-text {
+    font-size: 30px;
+  }
+
+  @keyframes flickerIn {
+    0% {
+      transform: scale(0.7) translateY(-200px);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 0.5;
+    }
+
+    20% {
+      opacity: 0.25;
+    }
+
+    30% {
+      opacity: 0.5;
+    }
+
+    50% {
+      transform: scale(1);
+      opacity: 0.25;
+    }
+
+    100% {
+      transform: scale(0.9) translateY(0);
+      opacity: 1;
+    }
   }
 }

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.uo-plain {
+    width: 100%;
+    height: auto;
+    background: var(--container-background);
+    border-radius: 0.5rem;
+}
+
+.uo-text-box {
+    position: relative;
+    width: 700px;
+    background: var(--container-background);
+    border-radius: 0.5rem;
+
+    --gradient-color-1: var(--uo-green);
+    --gradient-color-2: var(--uo-yellow);
+}
+
+.uo-text-box::before,
+.uo-text-box::after {
+    content: "";
+    position: absolute;
+    inset: -0.25rem;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),
+            var(--gradient-color-1),
+            var(--gradient-color-2),
+            var(--gradient-color-2),
+            var(--gradient-color-1));
+    border-radius: 0.6rem;
+    animation: gradient-rotation 15s linear infinite;
+}
+
+.uo-text-box::after {
+    filter: blur(0.75rem);
+    opacity: 0.5;
+}
+
+.tv {
+    --gradient-color-1: var(--skyblue);
+    --gradient-color-2: var(--skyblue-transparent);
+}
+
+
+@media (max-width: 750px) {
+    .uo-text-box {
+        width: 90%;
+    }
+
+    .tv-text-box {
+        width: 90%;
+    }
+}
+
+@keyframes gradient-rotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+
+    100% {
+        --gradient-angle: 360deg;
+    }
+}

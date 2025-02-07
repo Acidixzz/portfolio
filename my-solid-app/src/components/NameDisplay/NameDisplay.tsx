@@ -1,7 +1,5 @@
 import { createSignal, onMount } from "solid-js";
 import Tilt from "../Tilt";
-import "./NameDisplay.css";
-import "./sun.css";
 
 export default function NameDisplay() {
 

@@ -16,7 +16,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 8px transparent;
-    animation: glowing-reverse 25s linear infinite;
+    animation: glowing-reverse 25s linear infinite, bounceIn 0.7s ease forwards;
+    transform-origin: center;
 }
 
 .university-text::after {

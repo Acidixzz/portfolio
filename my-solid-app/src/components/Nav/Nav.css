@@ -47,13 +47,12 @@ ul {
 
 .nav-link-active {
     color: var(--skyblue);
-    font-weight: 600;
-    /* text-shadow:
+    text-shadow:
         0 0 0px var(--skyblue),
         0 0 10px var(--skyblue-transparent),
         0 0 20px var(--skyblue),
         0 0 40px var(--skyblue),
-        0 0 80px var(--skyblue); */
+        0 0 80px var(--skyblue);
 }
 
 .nav-link-uo {
@@ -63,11 +62,17 @@ ul {
 
 .nav-link-uo:hover {
     color: var(--uo-green);
+
 }
 
 .nav-link-active-uo {
     color: var(--uo-green);
-    font-weight: 600;
+    text-shadow:
+        0 0 0px var(--uo-green),
+        0 0 10px var(--uo-green),
+        0 0 20px var(--uo-green),
+        0 0 40px var(--uo-green),
+        0 0 80px var(--uo-green);
 }
 
 

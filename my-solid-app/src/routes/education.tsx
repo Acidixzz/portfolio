@@ -1,5 +1,4 @@
 import UOTextBox from "../components/UOTextBox/UOTextBox";
-import "./education.css";
 import { onMount } from "solid-js";
 
 export default function Education() {

@@ -1,12 +1,11 @@
-import { useLocation } from "@solidjs/router";
-import "./Footer.css";
+import { useBrowserLocation } from "../../util/useBrowserLocation";
 import { createEffect, Show } from "solid-js";
 
 export default function Footer() {
 
-    const location = useLocation();
+    const location = useBrowserLocation();
 
-    const isEducation = () => location.pathname == "/education" ? "-uo" : "";
+    const isEducation = () => location() == "/education" ? "-uo" : "";
 
     return (
         <footer class={`text-center justify-items-center footer${isEducation()}`}>

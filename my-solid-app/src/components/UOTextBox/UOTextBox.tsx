@@ -1,8 +1,10 @@
 import "./UOTextBox.css";
-import { onMount, ParentProps } from "solid-js";
+import { JSX, onMount, ParentProps } from "solid-js";
 
 interface TextBoxProps {
     route?: string;
+    forTuneVault?: boolean;
+    style?: JSX.CSSProperties;
 }
 
 export default function TextBox(props: TextBoxProps & ParentProps) {
@@ -35,8 +37,8 @@ export default function TextBox(props: TextBoxProps & ParentProps) {
     });
 
     return (
-        <div class="relative uo-text-box opacity-0 animate-none">
-            <div class="uo-plain">
+        <div class={`relative ${props.forTuneVault ? 'tv' : ''} uo-text-box opacity-0 animate-none`}>
+            <div class="uo-plain" style={props.style}>
                 {props.children}
             </div>
         </div>

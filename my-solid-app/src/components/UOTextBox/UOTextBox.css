@@ -20,6 +20,9 @@
     width: 700px;
     background: var(--container-background);
     border-radius: 0.5rem;
+
+    --gradient-color-1: var(--uo-green);
+    --gradient-color-2: var(--uo-yellow);
 }
 
 .uo-text-box::before,
@@ -29,10 +32,10 @@
     inset: -0.25rem;
     z-index: -1;
     background: conic-gradient(from var(--gradient-angle),
-            var(--uo-green),
-            var(--uo-yellow),
-            var(--uo-yellow),
-            var(--uo-green));
+            var(--gradient-color-1),
+            var(--gradient-color-2),
+            var(--gradient-color-2),
+            var(--gradient-color-1));
     border-radius: 0.6rem;
     animation: gradient-rotation 15s linear infinite;
 }
@@ -42,9 +45,18 @@
     opacity: 0.5;
 }
 
+.tv {
+    --gradient-color-1: var(--skyblue);
+    --gradient-color-2: var(--skyblue-transparent);
+}
+
 
 @media (max-width: 750px) {
     .uo-text-box {
+        width: 90%;
+    }
+
+    .tv-text-box {
         width: 90%;
     }
 }

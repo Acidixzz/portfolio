@@ -18,6 +18,7 @@ import Home from "./routes/home";
 import Education from "./routes/education";
 import Experience from "./routes/experience";
 import Projects from "./routes/projects";
+import TuneVault from './routes/tunevault';
 import NotFound from "./routes/[...404]";
 
 import { Route, Router } from '@solidjs/router';
@@ -38,6 +39,7 @@ render(() =>
       <Route path="/education" component={Education} />
       {/* <Route path="/experience" component={Experience} /> */}
       <Route path="/projects" component={Projects} />
+      <Route path="/tunevault" component={TuneVault} />
       <Route path="*" component={NotFound} /> {/* 404 fallback */}
     </Router>
     <Footer />

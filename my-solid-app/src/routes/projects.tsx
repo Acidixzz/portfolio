@@ -42,7 +42,7 @@ export default function Projects() {
                     </div>
                 </TextBox>
 
-                <TextBox isButton style={{ width: '100%' }}>
+                <TextBox route="/tunevault" style={{ width: '100%' }}>
                     <div class="image-uo" style={"--bg-image: url('/projects/TuneVault.png'); transform: scale(1.05)"} />
                     <div class=" text-left">
                         <p class="uppercase p-6" style={"font-size: 25px; font-weight: 700; color: white; padding-bottom: 0;"}>

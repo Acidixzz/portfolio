@@ -1,3 +1,4 @@
+import PhoneVideoMockup from "../components/PhoneVideoMockup/PhoneVideoMockup";
 import TextBox from "../components/TextBox/TextBox";
 import UOTextBox from "../components/UOTextBox/UOTextBox";
 
@@ -23,12 +24,7 @@ export default function TuneVault() {
                     In the edit song screen, you can chenge the Name, Artist, Picture, and even the background color of the song.
                 </p>
 
-                <div class="image-uo" style={"--bg-image: url('/projects/phone.png'); transform: scale(1)"} >
-                    <video autoplay muted loop playsinline class="bg-video">
-                        <source src="../../public/projects/color.mp4" type="video/mp4" />
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
+                <PhoneVideoMockup path="../../public/projects/color.mp4" />
 
                 <p style={"padding: 30px; color: white;"}>
                     My goal with Tune Vault is to create an easy to use and personalizable experience for everyone. I have always wanted the ability

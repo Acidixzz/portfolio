@@ -47,7 +47,7 @@
 
 .tv {
     --gradient-color-1: var(--skyblue);
-    --gradient-color-2: var(--skyblue-worse);
+    --gradient-color-2: var(--skyblue-transparent);
 }
 
 

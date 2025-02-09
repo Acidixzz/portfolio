@@ -28,6 +28,7 @@ export default function Footer() {
             </ul>
             <div style={"height: 1.5em"} />
             <p style={"width: 100%; font-size: 12px; color: grey; font-weight: 200; background-color: black"}>
+                © 2025 Owen Wilson. All Rights Reserved.
                 Icons by <a href="https://icons8.com" target="_blank" style={"text-decoration: underline"}>Icons8</a>
             </p>
         </footer>

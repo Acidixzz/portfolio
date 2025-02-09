@@ -53,17 +53,38 @@ body {
 }
 
 .image-uo {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.image-uo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: var(--bg-image);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  padding-top: 56.25%;
-  height: auto;
-  border-radius: .25rem;
+  z-index: 2;
+  pointer-events: none;
 }
 
-
+.bg-video {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 93%;
+  object-fit: contain;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
 
 
 /* animations */
@@ -77,18 +98,6 @@ body {
   0% {
     transform: translateY(-200px);
     opacity: 0;
-  }
-
-  10% {
-    opacity: 0.5;
-  }
-
-  20% {
-    opacity: 0.25;
-  }
-
-  30% {
-    opacity: 0.5;
   }
 
   50% {

@@ -1,0 +1,13 @@
+.spaced-list li {
+    margin-bottom: 4.5rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+@media (max-width: 750px) {
+    .spaced-list li {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

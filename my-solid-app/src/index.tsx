@@ -34,7 +34,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() =>
   <>
     <Nav />
-    <Router>
+    <Router base='/porfolio'>
       <Route path="/" component={Home} /> {/* Home redirects to Education */}
       <Route path="/education" component={Education} />
       {/* <Route path="/experience" component={Experience} /> */}

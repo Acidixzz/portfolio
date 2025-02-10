@@ -31,7 +31,7 @@ export default function Projects() {
 
             <div class={`grid ${isMobile() ? "grid-cols-1" : "grid-cols-2"} gap-10 justify-between h-full grid-width`}>
                 <TextBox isButton route={"https://github.com/Acidixzz/Meteorite-Knight"} style={{ width: '100%' }}>
-                    <div class="image-uo" style={"--bg-image: url('/projects/knight.png'); transform: scale(1.05)"} />
+                    <div class="image-uo" style={"--bg-image: url('/portfolio/projects/knight.png'); transform: scale(1.05)"} />
                     <div class=" text-left">
                         <p class="uppercase p-6" style={"font-size: 25px; font-weight: 700; color: white; padding-bottom: 0;"}>
                             Meteorite Knight
@@ -42,8 +42,8 @@ export default function Projects() {
                     </div>
                 </TextBox>
 
-                <TextBox route="/tunevault" style={{ width: '100%' }}>
-                    <div class="image-uo" style={"--bg-image: url('/projects/TuneVault.png'); transform: scale(1.05)"} />
+                <TextBox route="/portfolio/tunevault" style={{ width: '100%' }}>
+                    <div class="image-uo" style={"--bg-image: url('/portfolio/projects/TuneVault.png'); transform: scale(1.05)"} />
                     <div class=" text-left">
                         <p class="uppercase p-6" style={"font-size: 25px; font-weight: 700; color: white; padding-bottom: 0;"}>
                             Tune Vault

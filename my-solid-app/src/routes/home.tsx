@@ -50,20 +50,20 @@ export default function Home() {
             company="Edupoint"
             jobTitle="Mobile Software Engineer Intern"
             year="2024 - Now"
-            img="/company-logos/Synergy.jpg"
+            img="/portfolio/company-logos/Synergy.jpg"
           />
           <div style={"border-width: 0.5px; border-color: var(--skyblue); margin-left: 20px; margin-right: 20px; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
           <CompanyListing
             company="Edupoint"
             jobTitle="Software Engineer Intern"
             year="2023 - 2024"
-            img="/company-logos/Synergy.jpg"
+            img="/portfolio/company-logos/Synergy.jpg"
           />
         </TextBox>
 
         <div class="spacer" />
 
-        <TextBox route="/education">
+        <TextBox route="/portfolio/education">
           <h1 class="uppercase header-text">
             Education
           </h1>
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* <div class="spacer" />
 
-        <TextBox route="/experience">
+        <TextBox route="/portfolio/experience">
           <h1 class="uppercase header-text">
             Experience
           </h1>
@@ -79,7 +79,7 @@ export default function Home() {
 
         <div class="spacer" />
 
-        <TextBox route="/projects">
+        <TextBox route="/portfolio/projects">
           <h1 class="uppercase header-text">
             Projects
           </h1>

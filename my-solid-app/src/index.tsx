@@ -34,12 +34,12 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() =>
   <>
     <Nav />
-    <Router base='/porfolio'>
-      <Route path="/" component={Home} /> {/* Home redirects to Education */}
-      <Route path="/education" component={Education} />
+    <Router>
+      <Route path="/portfolio" component={Home} /> {/* Home redirects to Education */}
+      <Route path="/portfolio/education" component={Education} />
       {/* <Route path="/experience" component={Experience} /> */}
-      <Route path="/projects" component={Projects} />
-      <Route path="/tunevault" component={TuneVault} />
+      <Route path="/portfolio/projects" component={Projects} />
+      <Route path="/portfolio/tunevault" component={TuneVault} />
       <Route path="*" component={NotFound} /> {/* 404 fallback */}
     </Router>
     <Footer />

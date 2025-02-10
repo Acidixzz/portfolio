@@ -18,7 +18,7 @@ export default function TuneVault() {
                     Tune Vault
                 </h1>
                 <div style={"border-width: 0.5px; margin: 10px; border-color: var(--skyblue); margin-left: 30%; margin-right: 30%; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
-                <div class="image-uo" style={"--bg-image: url('/projects/tune-mock.png'); transform: scale(1)"} />
+                <div class="image-uo" style={"--bg-image: url('/portfolio/projects/tune-mock.png'); transform: scale(1)"} />
                 <p style={"padding: 30px; color: white; font-weight: 200;"}>
                     Tune Vault is a modern MP3 player app designed with a sleek look and an intuitive user interface.
                     Importing your favorite MP3 files is effortless. Just tap the plus
@@ -27,7 +27,7 @@ export default function TuneVault() {
                 </p>
 
                 <div class="flex">
-                    <PhoneVideoMockup path="../../public/projects/color.webm" />
+                    <PhoneVideoMockup path="/portfolio/projects/color.webm" />
                     <ul class="text-left spaced-list" style={"color: white; width: 100%; margin-top: 20px"}>
                         <li>● Rename the song</li>
                         <li>● Update the artist</li>
@@ -43,7 +43,7 @@ export default function TuneVault() {
                     adapts to the user's preferences, making the listening experience more intuitive and personal.
                 </p>
 
-                <PhoneVideoMockup path="../../public/projects/settings.webm" />
+                <PhoneVideoMockup path="/portfolio/projects/settings.webm" />
 
                 <p style={"padding: 30px; color: white; font-weight: 200;"}>
                     I designed Tune Vault to offer a seamless and highly personal music experience.

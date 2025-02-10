@@ -8,7 +8,7 @@ export default function Education() {
             <p class="university-text" style={"margin-bottom: 10vh;"} data-text="University of Oregon">University of Oregon</p>
             <UOTextBox>
                 <div style={"padding: 30px; padding-bottom: 0;"}>
-                    <div class="image-uo" style={"border-radius: 5px; --bg-image: url('/uo.jpg');"}></div>
+                    <div class="image-uo" style={"border-radius: 5px; --bg-image: url('/portfolio/uo.jpg');"}></div>
                 </div>
                 <h1 style={"padding: 30px; color: white;"}>
                     Since childhood, I have always dreamed of pursuing my education at the University of Oregon.
@@ -21,7 +21,7 @@ export default function Education() {
 
             <UOTextBox>
                 <div class="flex items-center justify-center" style={"padding: 30px; padding-bottom: 0;"}>
-                    <img src="/leet.png" alt="LeetClub Logo" style={"height: 300px; border-radius: 15px"} />
+                    <img src="/portfolio/leet.png" alt="LeetClub Logo" style={"height: 300px; border-radius: 15px"} />
                 </div>
                 <h1 style={"padding: 30px; color: white;"}>
                     I serve on the board of directors for UO LeetClub, a student-run club focused on coding and computer science.

@@ -23,7 +23,7 @@
   overflow: hidden;
   box-shadow: 0 0 100px 10px var(--skyblue);
   /* Glow effect */
-  animation: pulse-grid 10s infinite ease-in-out;
+  animation: pulse-grid 10s infinite ease-in-out, down-fade 0.5s ease-out;
 
   &:before {
     content: "";
@@ -107,6 +107,18 @@
         0 18em, 100% 18em, 100% 18.5em, 0 18.5em,
         0 19em, 100% 19em, 100% 19.5em, 0 19.5em,
         0 20em, 100% 20em, 100% 20.5em, 0 20.5em);
+  }
+}
+
+@keyframes down-fade {
+  0% {
+    transform: translateX(-50%) translateY(-200px) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0px) scale(1);
+    opacity: 0.3;
   }
 }
 

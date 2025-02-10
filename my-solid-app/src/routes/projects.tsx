@@ -64,7 +64,7 @@ export default function Projects() {
                 </h1>
                 <div style={"border-width: 0.5px; margin-top: 10px; border-color: var(--skyblue); margin-left: 35%; margin-right: 35%; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
                 <p style={"padding: 30px; padding-top: 20px; color: white;"}>
-                    I designed this site in just over a week using Solid.js and Tailwind CSS. While building my portfolio,
+                    I designed this site in just over a couple weeks using Solid.js and Tailwind CSS. While building my portfolio,
                     I embraced the challenge of learning a new frontend framework, which allowed me to deepen my understanding of modern web development.
                     This project also gave me the opportunity to refine my CSS skills while enjoying the creative process.
                 </p>

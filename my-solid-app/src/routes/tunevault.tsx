@@ -27,7 +27,7 @@ export default function TuneVault() {
                 </p>
 
                 <div class="flex">
-                    <PhoneVideoMockup path="/portfolio/projects/color.webm" />
+                    <PhoneVideoMockup path="/portfolio/projects/color" />
                     <ul class="text-left spaced-list" style={"color: white; width: 100%; margin-top: 20px"}>
                         <li>● Rename the song</li>
                         <li>● Update the artist</li>
@@ -43,7 +43,7 @@ export default function TuneVault() {
                     adapts to the user's preferences, making the listening experience more intuitive and personal.
                 </p>
 
-                <PhoneVideoMockup path="/portfolio/projects/settings.webm" />
+                <PhoneVideoMockup path="/portfolio/projects/settings" />
 
                 <p style={"padding: 30px; color: white; font-weight: 200;"}>
                     I designed Tune Vault to offer a seamless and highly personal music experience.

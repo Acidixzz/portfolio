@@ -11,6 +11,9 @@ export default function TuneVault() {
 
 
             <UOTextBox forTuneVault>
+                <p style={"padding: 30px; color: white; font-weight: 200;"}>
+                    **Still in development
+                </p>
                 <h1 class="header-text text-center" style={"padding-bottom: 0; padding-top: 10px;"}>
                     Tune Vault
                 </h1>

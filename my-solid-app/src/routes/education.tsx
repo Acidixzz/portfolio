@@ -16,20 +16,6 @@ export default function Education() {
                     Data Science, and Spatial Data Science and Technologies, and I am set to graduate in June 2026.
                 </h1>
             </UOTextBox>
-
-            <div style={"height: 4rem"} />
-
-            <UOTextBox>
-                <div class="flex items-center justify-center" style={"padding: 30px; padding-bottom: 0;"}>
-                    <img src="/portfolio/leet.png" alt="LeetClub Logo" style={"height: 300px; border-radius: 15px"} />
-                </div>
-                <h1 style={"padding: 30px; color: white;"}>
-                    I serve on the board of directors for UO LeetClub, a student-run club focused on coding and computer science.
-                    We provide a supportive space for students to practice LeetCode problems, learn key CS concepts, and prepare for technical interviews.
-                    Each meeting covers a specific topic, such as algorithms, data structures, or problem-solving strategies.
-                </h1>
-            </UOTextBox>
-
             <div style={"height: 4rem"} />
         </div>
     )

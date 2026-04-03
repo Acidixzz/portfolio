@@ -11,13 +11,29 @@ export default function TuneVault() {
 
 
             <UOTextBox forTuneVault>
-                <p style={"padding: 30px; color: white; font-weight: 200;"}>
-                    **Still in development
-                </p>
                 <h1 class="header-text text-center" style={"padding-bottom: 0; padding-top: 10px;"}>
                     Tune Vault
                 </h1>
-                <div style={"border-width: 0.5px; margin: 10px; border-color: var(--skyblue); margin-left: 30%; margin-right: 30%; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
+
+                <div
+                    style={
+                        "display: flex; justify-content: center; width: 100%; box-sizing: border-box; padding: 0 30px; margin: 0.25rem 0 1.25rem;"
+                    }
+                >
+                    <a
+                        style={"display: block; line-height: 0;"}
+                        href="https://apps.apple.com/us/app/tune-vault/id6670519481"
+                    >
+                        <img
+                            style={"display: block; max-width: 100%; height: auto;"}
+                            src="/portfolio/company-logos/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                            alt="Download on the App Store"
+                        />
+                    </a>
+                </div>
+
+                <div style={"border-width: 0.5px; margin: 10px; margin-bottom: 40px; border-color: var(--skyblue); margin-left: 30%; margin-right: 30%; box-shadow: 0 0 10px var(--skyblue-transparent);"} />
+
                 <div class="image-uo" style={"--bg-image: url('/portfolio/projects/tune-mock.png'); transform: scale(1)"} />
                 <p style={"padding: 30px; color: white; font-weight: 200;"}>
                     Tune Vault is a modern MP3 player app designed with a sleek look and an intuitive user interface.
